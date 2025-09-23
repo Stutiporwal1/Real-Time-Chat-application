@@ -25,7 +25,7 @@ form.addEventListener("submit", function (e) {
     sessionStorage.setItem("username", username);
 
     // Little welcome animation before redirect
-    joinBtn.innerText = "🎉 Welcome!";
+    joinBtn.innerText = "Welcome!";
     joinBtn.style.background = "linear-gradient(90deg, #28a745, #20c997)";
     setTimeout(() => {
       window.location.href = "chat.html";
