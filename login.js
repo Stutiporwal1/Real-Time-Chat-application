@@ -15,3 +15,20 @@ usernameInput.addEventListener("input", () => {
     joinBtn.style.opacity = "1";
   }
 });
+
+// Submit form
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const username = usernameInput.value.trim();
+
+  if (username.length >= 3) {
+    sessionStorage.setItem("username", username);
+
+    // Little welcome animation before redirect
+    joinBtn.innerText = "🎉 Welcome!";
+    joinBtn.style.background = "linear-gradient(90deg, #28a745, #20c997)";
+    setTimeout(() => {
+      window.location.href = "chat.html";
+    }, 1200);
+  }
+});
