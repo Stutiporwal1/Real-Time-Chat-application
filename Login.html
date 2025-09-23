@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Chat</title>
-    <link rel="stylesheet" href="login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Chat</title>
+  <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="login-container">
-        <h1>Join Chatroom</h1>
-        <form id="login-form">
-            <input type="text" id="username" placeholder="Enter your username" required autocomplete="off">
-            <button type="submit">Join</button>
-        </form>
-    </div>
-    <script src="login.js"></script>
+  <div class="login-container">
+    <h1 class="title">Join Chatroom</h1>
+    <form id="login-form">
+      <input 
+        type="text" 
+        id="username" 
+        placeholder="Enter your username" 
+        required 
+        autocomplete="off"
+      >
+      <small id="username-hint">Username must be at least 3 characters</small>
+      <button type="submit" id="join-btn"> Join</button>
+    </form>
+  </div>
+  <script src="login.js"></script>
 </body>
 </html>
+
