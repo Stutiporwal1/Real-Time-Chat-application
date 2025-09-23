@@ -32,3 +32,10 @@ form.addEventListener("submit", function (e) {
     }, 1200);
   }
 });
+
+// Enter-to-submit
+usernameInput.addEventListener("keyup", (e) => {
+  if (e.key === "Enter") {
+    form.dispatchEvent(new Event("submit"));
+  }
+});
